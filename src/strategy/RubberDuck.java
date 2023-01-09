@@ -10,4 +10,9 @@ public class RubberDuck extends Duck{
     public void quack() {
         System.out.println("squeak squeak");
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Cannot Fly");
+    }
 }

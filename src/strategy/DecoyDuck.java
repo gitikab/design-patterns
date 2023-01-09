@@ -10,4 +10,9 @@ public class DecoyDuck extends Duck{
     public void quack() {
         System.out.println("No sound");
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Cannot Fly");
+    }
 }
