@@ -22,4 +22,9 @@ Advantages:
 1. Other types of objects can reuse the new behaviours as those behaviours are not hidden in parent class.
 2. New behaviours can be added without touching any existing classes.
 
+### Design Principle: Favor composition over inheritance.
+
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Strategy lets the algorithm vary independently from clients that use it.
+
 
