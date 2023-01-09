@@ -16,5 +16,6 @@ So, inheritance is not the right answer.
 
 ### Design Principle: Identify the aspects of the application that vary and separate them from what stays the same. Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.
 
+### Design Principle: Program to an interface, not an implementation.
 
 
