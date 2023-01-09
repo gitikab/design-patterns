@@ -18,4 +18,8 @@ So, inheritance is not the right answer.
 
 ### Design Principle: Program to an interface, not an implementation.
 
+Advantages:
+1. Other types of objects can reuse the new behaviours as those behaviours are not hidden in parent class.
+2. New behaviours can be added without touching any existing classes.
+
 

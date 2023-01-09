@@ -1,18 +1,14 @@
 package strategy;
 
-public class DecoyDuck extends Duck{
+public class DecoyDuck extends Duck {
+
+    public DecoyDuck() {
+        quackingBehaviour = new MuteQuack();
+        flyingBehaviour = new FlyNoWay();
+    }
+
     @Override
     public void display() {
         System.out.println("Decoy duck");
-    }
-
-    @Override
-    public void quack() {
-        System.out.println("No sound");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Cannot Fly");
     }
 }

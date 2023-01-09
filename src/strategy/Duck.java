@@ -1,10 +1,12 @@
 package strategy;
 
-public abstract class Duck implements FlyingBehaviour, QuackingBehaviour {
+public abstract class Duck {
 
-    @Override
-    public void quack() {
-        System.out.println("quack quack");
+    protected FlyingBehaviour flyingBehaviour;
+    protected QuackingBehaviour quackingBehaviour;
+
+    public void performQuack() {
+        quackingBehaviour.quack();
     }
 
     public void swim() {
@@ -13,8 +15,7 @@ public abstract class Duck implements FlyingBehaviour, QuackingBehaviour {
 
     public abstract void display();
 
-    @Override
-    public void fly() {
-        System.out.println("Fly");
+    public void performFly() {
+        flyingBehaviour.fly();
     }
 }

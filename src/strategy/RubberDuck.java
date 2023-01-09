@@ -1,18 +1,14 @@
 package strategy;
 
-public class RubberDuck extends Duck{
+public class RubberDuck extends Duck {
+
+    public RubberDuck() {
+        quackingBehaviour = new Squeak();
+        flyingBehaviour = new FlyNoWay();
+    }
+
     @Override
     public void display() {
         System.out.println("Rubber Duck");
-    }
-
-    @Override
-    public void quack() {
-        System.out.println("squeak squeak");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Cannot Fly");
     }
 }
